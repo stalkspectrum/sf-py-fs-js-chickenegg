@@ -2,13 +2,13 @@ const dataURL = "https://api.myjson.com/bins/jcmhn";
 
 function Write_Data(We_Got_Data) {
     let Story_Output = "";
-    const Field1 = $("input[name=field1]")[0].value;
-    const Field2 = $("input[name=field2]")[0].value;
-    const Field3 = $("input[name=field3]")[0].value;
-    const Field4 = $("input[name=field4]")[0].value;
-    const Field5 = $("input[name=field5]")[0].value;
-    const Field6 = $("input[name=field6]")[0].value;
-    const Field7 = $("textarea[name=field7]")[0].value;
+    const Field1 = $("input[name=var1]")[0].value;
+    const Field2 = $("input[name=var2]")[0].value;
+    const Field3 = $("input[name=var3]")[0].value;
+    const Field4 = $("input[name=var4]")[0].value;
+    const Field5 = $("input[name=var5]")[0].value;
+    const Field6 = $("input[name=var6]")[0].value;
+    const Field7 = $("textarea[name=var7]")[0].value;
     const Strings_Array = We_Got_Data["text"];
     for(let ns = 0; ns < Strings_Array.length; ns++) {
         Strings_Array[ns] = Strings_Array[ns].replace(/{var1}/g, Field1);
