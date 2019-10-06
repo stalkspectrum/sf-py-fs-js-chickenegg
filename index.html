@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Сказка про курочку Рябу</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/begin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Курочка ряба</h1>
+        <p>Предлагаем поменять персонажей в известной сказке и пересказать её на новый лад</p>
+        <form id="messages">
+            <div class="form-group">
+                <label for="field1">Первый&nbsp;заказчик: </label>
+                <input type="text" class="form-control" name="field1" placeholder="Дед" value="Дед">
+            </div>
+            <div class="form-group">
+                <label for="field2">Заместитель&nbsp;заказчика по исполнителям: </label>
+                <input type="text" class="form-control" name="field2" placeholder="Баба" value="Баба">
+            </div>
+            <div class="form-group">
+                <label for="field3">Исполнитель: </label>
+                <input type="text" class="form-control" name="field3" placeholder="Курочка Ряба" value="Курочка Ряба">
+            </div>
+            <div class="form-group">
+                <label for="field4">Долгожданный&nbsp;продукт: </label>
+                <input type="text" class="form-control" name="field4" placeholder="Яичко" value="яичко">
+            </div>
+            <div class="form-group">
+                <label for="field5">Тестировщик: </label>
+                <input type="text" class="form-control" name="field5" placeholder="Мышка" value="Мышка">
+            </div>
+            <div class="form-group">
+                <label for="field6">Каким инструментом работает тестировщик: </label>
+                <input type="text" class="form-control" name="field6" placeholder="хвостиком" value="хвостиком">
+            </div>
+            <div class="form-group">
+                <label for="field7">Отмазки исполнителя: </label>
+                <textarea class="form-control" name="field7" placeholder="Тут надо что-то написать обязательно, потому что &lt;textarea&gt;." required="required"></textarea>
+            </div>
+        </form>
+        <div class="row">
+            <a id="button-fetch" class="btn btn-primary">Создать сказку</a>
+        </div>
+        <div class="row">
+            <div class="pulp_fiction" id="result"></div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/chickr.js"></script>
+</body>
+</html>
